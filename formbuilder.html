@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Form Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Dynamic Form Builder</h1>
+
+<div class="container">
+
+  <!-- Left Panel -->
+  <div class="builder">
+    <h2>Add Fields</h2>
+    <div class="field-option">
+      <label>Text Field <button class="add-btn" data-type="text">Add</button></label>
+    </div>
+    <div class="field-option">
+      <label>Email <button class="add-btn" data-type="email">Add</button></label>
+    </div>
+    <div class="field-option">
+      <label>Phone <button class="add-btn" data-type="phone">Add</button></label>
+    </div>
+    <div class="field-option">
+      <label>Date of Birth <button class="add-btn" data-type="dob">Add</button></label>
+    </div>
+    <div class="field-option">
+      <label>Textarea <button class="add-btn" data-type="textarea">Add</button></label>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div class="preview">
+    <h2>Form Preview</h2>
+    <form id="form-preview">
+      <!-- Dynamic fields will appear here -->
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
